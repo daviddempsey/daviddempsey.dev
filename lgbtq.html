@@ -1,0 +1,56 @@
+<html>
+	<body>
+		<script src="functions.js"></script>
+		<h1>Anonymous LGBTQ Email Service</h1>
+		<h3>All information given is completely anonymous</h3>
+
+		<form>
+			Would you prefer to be paired with a similar LGBTQ individual?<br>
+			<input type="radio" name="pair" value="yes" id="yesOption" onchange="displayForm(this)"> Yes<br>
+			<input type="radio" name="pair" value="nopref" onchange="displayForm(this)" selected> No preference
+		</form>		
+
+		<div id="survey" style="display:none;">
+			<form id="surveyform">
+				What is your sexuality?<br>
+				<input type="radio" name="sexuality" value="gay"> Gay<br>
+				<input type="radio" name="sexuality" value="lesbian"> Lesbian<br>
+				<input type="radio" name="sexuality" value="bisexual"> Bisexual<br>
+				<input type="radio" name="sexuality" value="pansexual"> Pansexual<br>
+				<input type="radio" name="sexuality" value="pansexual"> Queer<br>
+				<input type="radio" name="sexuality" value="straight"> Straight<br>
+				<br>
+				What is your gender?<br>
+				<input type="radio" name="gender" value="cismale"> Cis Male<br>
+				<input type="radio" name="gender" value="cisfemale"> Cis Female<br>
+				<input type="radio" name="gender" value="transmale"> Trans Male<br>
+				<input type="radio" name="gender" value="transfemale"> Trans Female<br>
+				<input type="radio" name="gender" value="nonbinary"> Non-binary<br>
+				<br>
+				What is your race/ethnicity?<br>
+				<input type="radio" name="race" value="americanindian"> American Indian or Alaskan Native<br>
+				<input type="radio" name="race" value="white"> White<br>
+				<input type="radio" name="race" value="asian"> Asian / Pacific Islander<br>
+				<input type="radio" name="race" value="hispaniclatino"> Hispanic or Latino<br>
+				<input type="radio" name="race" value="black"> Black or African American<br>
+				<input type="radio" name="race" value="middleeastern"> Middle Eastern<br>
+				<br>
+				What is the most important characteristic you would like to share with the person you are matched with?<br>
+				<input type="radio" name="topcharacteristic" value="sexuality"> Sexuality<br>
+				<input type="radio" name="topcharacteristic" value="gender"> Gender<br>	
+				<input type="radio" name="topcharacteristic" value="race"> Race<br>	
+				<br>
+			</form>
+		</div>
+			<form id="surveyform">
+				What would you like to discuss? Feel free to ask questions or share any concerns you may have.<br>
+				<textarea rows="4" cols="50" form="surveyform" placeholder="Type here">
+				</textarea>
+				<br><br>
+				What is your email so that we can get back to you? Your email is kept anonymous.<br>
+				<b>Email:</b> <input type="text" name="email"><br>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+	</body>
+</html> 
