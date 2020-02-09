@@ -1,15 +1,22 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
 	<body>
+		<div class="center">
 		<script src="functions.js"></script>
+		<img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/9-lgbt-lesbian-gaytransgender-bisexual-gay-pride-flag-craig-mccausland.jpg" width=256>
 		<h1>Anonymous LGBTQ Email Service</h1>
 		<h3>All information given is completely anonymous</h3>
 
 		<form>
 			Would you prefer to be paired with a similar LGBTQ individual?<br>
+			You will be paired with an LGBTQ individual in either case<br>
 			<input type="radio" name="pair" value="yes" id="yesOption" onchange="displayForm(this)"> Yes<br>
-			<input type="radio" name="pair" value="nopref" onchange="displayForm(this)" selected> No preference
+			<input type="radio" name="pair" value="nopref" onchange="displayForm(this)" selected> No preference<br>
 		</form>		
-
+		<br>
 		<div id="survey" style="display:none;">
 			<form id="surveyform">
 				What is your sexuality?<br>
@@ -42,15 +49,16 @@
 				<br>
 			</form>
 		</div>
-			<form id="surveyform">
-				What would you like to discuss? Feel free to ask questions or share any concerns you may have.<br>
-				<textarea rows="4" cols="50" form="surveyform" placeholder="Type here">
-				</textarea>
-				<br><br>
-				What is your email so that we can get back to you? Your email is kept anonymous.<br>
-				<b>Email:</b> <input type="text" name="email"><br>
-				<br>
-				<input type="submit" value="Submit">
-			</form>
+		<form id="surveyform">
+			What would you like to discuss? Feel free to ask questions or share any concerns you may have.<br>
+			<textarea rows="4" cols="50" form="surveyform" placeholder="Type here">
+			</textarea>
+			<br><br>
+			What is your email so that we can get back to you? Your email is kept anonymous.<br>
+			<b>Email:</b> <input type="text" name="email"><br>
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+		</div>
 	</body>
 </html> 
