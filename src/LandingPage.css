@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
 .Landing {
   text-align: center;
@@ -39,33 +39,31 @@
   transform: translate(-50%,-50%);
 }
 
-.overlay {
-  position:relative;
-}
-
-.overlay body {
-  display: flex;
-  place-content: center;
-  height: 100vh;
-  font-family: 'Lato', sans-serif;
-}
-
 .overlay h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 500%;
-  font-weight: 900;
-  text-shadow: 3px 3px #1b1b1b;
+  font-weight: 700;
+  color: #fefefe;
+}
+
+.overlay h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 250%;
+  margin: -10px;
+  padding: 0px;
+  font-weight: 400;
   color: #fefefe;
 }
 
 .overlay button {
   font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .overlay p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   font-size: 150%;
-  max-width: 50vw;
   color: #fefefe;
 }
 
@@ -76,4 +74,9 @@
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+}
+
+.centered svg {
+  display: inline-block;
+  vertical-align: middle;
 }
