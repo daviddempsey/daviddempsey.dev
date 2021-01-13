@@ -10,16 +10,19 @@ function LandingPage() {
           <source src={night} type='video/mp4' />
         </video>
       </div>
-      <div>
-        <h1>David Dempsey</h1>
-        <ul id="horizontal-list">
-          <li>
-            <button type="button" className="btn btn-primary">Resume</button>
-          </li>
-          <li>
-            <button type="button" className="btn btn-primary">Contact</button>
-          </li>
-        </ul>
+      <div className="overlay">
+        <div className="centered">
+          <h1>David Dempsey</h1>
+          <p>This website is still a work in-progress. In the meantime, you can check out my resume or my social media below.</p>
+          <ul id="horizontal-list">
+            <li>
+              <button type="button" className="btn btn-light">Resume</button>
+            </li>
+            <li>
+              <button type="button" className="btn btn-light">Contact</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
