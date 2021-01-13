@@ -1,4 +1,29 @@
 .Footer {
+    position: absolute;
     display: flex;
-    align-items: right;
+    align-items: center;
+    right: 2.5%;
+    bottom: 2.5%;
+}
+
+.Footer ul {
+    list-style: none;
+}
+
+.Footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.Footer li {
+    float:left;
+    margin-left: 1vw;
+    padding: 5px;
+    color: #fff;
+    font-family: trebuchet ms;
+    font-size: 19px;
+    font-weight: lighter;
+    text-align: justify;
+    word-wrap:break-word;
 }
