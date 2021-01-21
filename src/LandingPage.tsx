@@ -20,7 +20,7 @@ function LandingPage() {
           </p>
           <ul id="horizontal-list">
             <li>
-              <a href="https://daviddempsey.dev/resume">
+              <a href="https://drive.google.com/file/d/1yhQ2ADCFKjY-6KwwvUeF2UJG_R1hBCKl/view?usp=sharing">
                 <button type="button" className="btn btn-light">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-earmark-person" viewBox="0 0 16 16">
                     <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
