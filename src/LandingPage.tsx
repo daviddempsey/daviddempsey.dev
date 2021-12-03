@@ -12,12 +12,7 @@ function LandingPage() {
       </div>
       <div className="overlay">
         <div className="centered">
-          <h2>Hello! I'm</h2>
           <h1>David Dempsey</h1>
-          <p>This website is still a work in-progress.
-          <br></br>
-          In the meantime, you can check out my resume or my social media below.
-          </p>
           <ul id="horizontal-list">
             <li>
               <a href="https://docs.google.com/document/d/1a1WGSq3x9cKzo-5z6hjdiwOtzgeFKgNsJteHmZV0TcE/edit?usp=sharing">
