@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "daviddempsey-dev.fullname" . }}
+  labels:
+    {{- include "daviddempsey-dev.labels" . | nindent 4 }}
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+spec:
+  ingressClassName: traefik
+  tls:
+    - hosts:
+        - {{ .Values.host | quote }}
+      secretName: {{ include "daviddempsey-dev.fullname" . }}-tls
+  rules:
+    - host: {{ .Values.host | quote }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ include "daviddempsey-dev.fullname" . }}
+                port:
+                  name: http

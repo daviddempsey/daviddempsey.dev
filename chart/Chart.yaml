@@ -1,0 +1,6 @@
+apiVersion: v2
+name: daviddempsey-dev
+description: Personal site for daviddempsey.dev
+type: application
+version: 0.1.0
+appVersion: 0.1.0

@@ -1,0 +1,18 @@
+image:
+  repository: ghcr.io/daviddempsey/daviddempsey-dev
+  tag: latest
+  pullPolicy: IfNotPresent
+
+host: daviddempsey.dev
+
+replicaCount: 1
+
+resources:
+  requests:
+    cpu: 10m
+    memory: 32Mi
+  limits:
+    cpu: 100m
+    memory: 64Mi
+
+imagePullSecrets: []
