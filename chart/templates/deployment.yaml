@@ -50,3 +50,23 @@ spec:
               path: /healthz
               port: http
             periodSeconds: 30
+          volumeMounts:
+            - name: site-content
+              mountPath: /usr/share/nginx/html/index.html
+              subPath: index.html
+              readOnly: true
+            - name: site-content
+              mountPath: /usr/share/nginx/html/styles.css
+              subPath: styles.css
+              readOnly: true
+            - name: nginx-config
+              mountPath: /etc/nginx/conf.d/default.conf
+              subPath: default.conf
+              readOnly: true
+      volumes:
+        - name: site-content
+          configMap:
+            name: {{ include "daviddempsey-dev.fullname" . }}-site
+        - name: nginx-config
+          configMap:
+            name: {{ include "daviddempsey-dev.fullname" . }}-nginx

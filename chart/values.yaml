@@ -1,6 +1,6 @@
 image:
-  repository: ghcr.io/daviddempsey/daviddempsey-dev
-  tag: latest
+  repository: nginxinc/nginx-unprivileged
+  tag: 1.27-alpine
   pullPolicy: IfNotPresent
 
 host: daviddempsey.dev
