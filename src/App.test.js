@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import LandingPage from './LandingPage';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders the personal homepage', () => {
+  render(<LandingPage />);
+  expect(screen.getByRole('heading', { name: 'David Dempsey' })).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: /contact/i })).toHaveAttribute('href', 'mailto:davidgdempsey@gmail.com');
 });
