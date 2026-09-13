@@ -1,13 +1,12 @@
 # Personal site template
 
-This is a small React starter for a personal site or portfolio.
+This project publishes a static personal-site template to Kubernetes.
 
 ## Edit the template
 
-Update the copy and links in src/LandingPage.tsx, then adjust the visual system in src/LandingPage.css.
+Update copy and links in `site/index.html` and style in `site/styles.css`.
 
-## Available scripts
+## Deployment shape
 
-- npm start — run the development server
-- npm test — run the test suite
-- npm run build — create a production build
+- `Dockerfile` serves `site/` with nginx on port `8080`.
+- `chart/` deploys a `ClusterIP` service and Traefik ingress with Let's Encrypt TLS.
